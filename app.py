@@ -107,7 +107,7 @@ def abouts():
 @app.route('/hasil', methods=['POST','GET'])
 def get_poi():
     Kota = request.form['kota']
-    url = "https://maps.googleapis.com/maps/api/place/textsearch/json?query=Tourists+Destinations+In+"+Kota+"&type=tourist_attraction&language=en&key=AIzaSyCDBFhximQ7r34GQIfZTa6MzKbVRBsRDFs"
+    url = "https://maps.googleapis.com/maps/api/place/textsearch/json?query=Tourists+Destinations+In+"+Kota+"&type=tourist_attraction&region=id&language=en&key=AIzaSyCDBFhximQ7r34GQIfZTa6MzKbVRBsRDFs"
 
     payload={}
     headers = {}
